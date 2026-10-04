@@ -60,9 +60,14 @@ function App() {
                 {site.email && <a href={`mailto:${site.email}`}>Email</a>}
               </div>}
             </div>
-            <div className="hero-frame">
-              {site.photo ? <img className="hero-photo" src={site.photo} alt={site.name} /> : <div className="hero-monogram">PDN</div>}
-              <div className="gold-ornament">✦</div>
+            <div className="hero-visual" aria-hidden="true">
+              <div className="hero-aura" />
+              <div className="hero-ring hero-ring-one" />
+              <div className="hero-ring hero-ring-two" />
+              {site.photo ? <img className="hero-photo" src={site.photo} alt="" /> : <div className="hero-monogram">PDN</div>}
+              <div className="gold-spark spark-one">✦</div>
+              <div className="gold-spark spark-two">✦</div>
+              <div className="hero-botanical" />
             </div>
           </div>
         </section>
