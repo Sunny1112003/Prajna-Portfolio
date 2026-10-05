@@ -190,7 +190,7 @@ function App() {
                       <span className="meta">{item.period}</span>
                       <h3>{item.degree}</h3>
                       <p>{item.institution}</p>
-                      {item.detail && <span className="education-detail">{item.detail}</span>}
+                      {item.details?.map((detail) => <span className="education-detail" key={detail}>{detail}</span>)}
                     </div>
                   </article>
                 ))}
@@ -205,7 +205,7 @@ function App() {
               <div>
                 <p className="eyebrow">06 · Contact</p>
                 <h2>Let's build something meaningful.</h2>
-                <p>Open to professional opportunities, technical collaborations, and conversations around AI, software, and intelligent systems.</p>
+                <p>Open to professional opportunities in AI and software engineering, with a focus on building practical solutions to real-world problems.</p>
               </div>
               <div className="contact-panel">
                 {site.email && <a className="contact-line" href={`mailto:${site.email}`}><span>Email</span><strong>{site.email}</strong></a>}
