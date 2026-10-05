@@ -16,17 +16,17 @@ export type Project = {
 export const site = {
   name: 'Prajna Deepankar Nelapuri',
   shortName: 'PDN',
-  title: 'AI Engineer | Software Engineer',
+  title: 'AI Engineer | AI/ML Engineer | Software Engineer',
   education: 'M.Tech, NIT Calicut',
   heroDescription:
-    'I build practical AI systems, full-stack applications, and intelligent data-driven solutions, with a focus on RAG, machine learning, backend engineering, and reliable software.',
+    'I build practical AI applications and software systems, with hands-on work in RAG, LLM applications, machine learning, backend APIs, and full-stack development. My work spans AI, software engineering, IoT, and data-driven systems, with a focus on building practical and reliable solutions.',
   about:
     'M.Tech graduate from NIT Calicut with a background in Electrical and Electronics Engineering and hands-on work across AI/ML, Generative AI, full-stack development, IoT, and research. My work combines software engineering with applied machine learning to turn technical ideas into usable systems.',
   photo: './assets/hero.webp',
   email: 'prajnadeepankarnelapuri@gmail.com',
   phone: '+91 9550167744',
   location: 'Hyderabad, India',
-  linkedin: '',
+  linkedin: 'https://www.linkedin.com/in/prajna-deepankar-nelapuri-25795b271/',
   github: 'https://github.com/Sunny1112003',
   resume: '',
 }
