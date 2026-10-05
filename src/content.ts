@@ -217,24 +217,30 @@ export const education: {
   degree: string
   institution: string
   period: string
-  detail?: string
+  details?: string[]
 }[] = [
   {
     degree: 'M.Tech · Industrial Power & Automation',
     institution: 'National Institute of Technology Calicut',
     period: '2024 – 2026',
-    detail: 'Electrical Engineering',
+    details: ['Electrical Engineering', 'CGPA: 7.85'],
   },
   {
     degree: 'B.Tech · Electrical & Electronics Engineering',
     institution: 'Sri Vasavi Engineering College',
     period: '2020 – 2024',
-    detail: 'CGPA: 7.25 / 10',
+    details: ['CGPA: 7.25'],
   },
   {
     degree: 'Intermediate · MPC',
     institution: 'Vikas Junior College',
-    period: 'Intermediate',
-    detail: '82%',
+    period: '2018 – 2020',
+    details: ['82%'],
+  },
+  {
+    degree: 'Secondary School Certificate (SSC)',
+    institution: 'S.V.R.K High School',
+    period: '2018',
+    details: ['CGPA: 8.8'],
   },
 ]
