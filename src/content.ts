@@ -16,7 +16,7 @@ export type Project = {
 export const site = {
   name: 'Prajna Deepankar Nelapuri',
   shortName: 'PDN',
-  title: 'AI/ML Engineer | Software Engineer',
+  title: 'AI Engineer | Software Engineer',
   education: 'M.Tech, NIT Calicut',
   heroDescription:
     'I build practical AI systems, full-stack applications, and intelligent data-driven solutions, with a focus on RAG, machine learning, backend engineering, and reliable software.',
