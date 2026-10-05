@@ -114,7 +114,7 @@ function App() {
         {hasProjects && (
           <section id="projects" className="section section-soft">
             <div className="container">
-              <SectionHeading number="02" title="Selected Projects" />
+              <SectionHeading number="02" title="Projects" />
               <div className="section-intro">
                 <p>Selected work across AI, software engineering, IoT, and engineering research.</p>
                 <span>{projects.length.toString().padStart(2, '0')} projects</span>
