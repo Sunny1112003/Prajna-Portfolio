@@ -23,9 +23,9 @@ export const site = {
   about:
     'M.Tech graduate from NIT Calicut with a background in Electrical and Electronics Engineering and hands-on work across AI/ML, Generative AI, full-stack development, IoT, and research. My work combines software engineering with applied machine learning to turn technical ideas into usable systems.',
   photo: './assets/hero.webp',
-  email: '',
-  phone: '',
-  location: '',
+  email: 'prajnadeepankarnelapuri@gmail.com',
+  phone: '+91 9550167744',
+  location: 'Hyderabad, India',
   linkedin: '',
   github: 'https://github.com/Sunny1112003',
   resume: '',
