@@ -11,6 +11,8 @@ export type Project = {
   overview?: string
   architecture?: string
   highlights?: string[]
+  research?: { title: string; description: string }[]
+  engineeringFocus?: string
 }
 
 export const site = {
@@ -33,10 +35,50 @@ export const site = {
 
 export const projects: Project[] = [
   {
+    title: 'Robust Fault-Tolerant Air Quality Monitoring & Prediction System',
+    category: 'M.Tech Thesis · IoT · Machine Learning',
+    description:
+      'A fault-tolerant IoT-based air quality monitoring and forecasting system integrating heterogeneous sensors, ESP32-based data acquisition, sensor fault detection and data recovery, CPCB-compliant AQI assessment, H₂S safety alerts, and TensorFlow-based pollutant forecasting.',
+    technologies: [
+      'ESP32',
+      'MQ Sensors',
+      'PMS7003',
+      'DHT22',
+      'ADS1115',
+      'Python',
+      'TensorFlow',
+      'MongoDB',
+      'React',
+      'Flask',
+      'KiCad',
+    ],
+    overview:
+      'An end-to-end IoT and machine-learning system designed for reliable air-quality monitoring and forecasting using heterogeneous sensors. The system acquires particulate, gas, environmental, and electrical measurements through an ESP32-based sensing node, performs sensor validation and fault detection, processes the collected data, and supports pollutant and AQI forecasting through a TensorFlow-based time-series prediction pipeline.',
+    architecture:
+      'Heterogeneous Sensors → ESP32 Data Acquisition → Sensor Validation & Fault Detection → Backend/API → MongoDB → React Dashboard → ML Forecasting',
+    highlights: [
+      'Multi-sensor acquisition using MQ7, MQ135, MQ136, PMS7003, DHT22, ADS1115, RTC, and SD storage.',
+      'Implemented rule-based fault detection, fault masking, and confidence assessment for sensor and system failures.',
+      'Applied data validation, filtering, smoothing, and clean-dataset generation for reliable ML inputs.',
+      'Developed a TensorFlow-based time-series forecasting pipeline for pollutant and AQI prediction.',
+      'Integrated backend processing, database storage, and a React-based monitoring dashboard.',
+      'Designed and developed a custom PCB for the monitoring node, covering schematic design, component integration, PCB layout, routing, and 3D verification.',
+      'Created required schematic symbols and PCB footprints and handled the hardware design through fabrication and assembly.',
+      'Personally assembled and soldered the fabricated board, including SMD components.',
+    ],
+    research: [
+      {
+        title: 'Fault-Tolerant Air Quality Monitoring and Forecasting Using Heterogeneous Sensors',
+        description:
+          'Presented at the 5th International Conference on Emerging Technology Trends in Electronics, Communication and Networking (ET2ECN 2026), SVNIT Surat, India, and accepted for publication in the Springer Lecture Notes in Electrical Engineering series. Paper submitted to the IEEE Internet of Things Journal (IEEE IoT-J) in July 2026.',
+      },
+    ],
+  },
+  {
     title: 'LLM-Powered Research Paper Assistant',
     category: 'Generative AI · RAG · Full Stack',
     description:
-      'A full-stack research intelligence application that organizes papers into persistent workspaces and provides grounded question answering over uploaded PDFs.',
+      'A full-stack RAG application for research-paper intelligence, with persistent workspaces and chats, PDF ingestion and page-aware processing, semantic retrieval using Sentence Transformers and ChromaDB, and grounded question answering with Gemma 3 through Ollama.',
     technologies: [
       'Python',
       'FastAPI',
@@ -50,51 +92,25 @@ export const projects: Project[] = [
     ],
     github: 'https://github.com/Sunny1112003/LLM-Research-Paper-Assistant',
     overview:
-      'The system supports persistent workspaces, independent chats, PDF ingestion, page-aware retrieval, source metadata, notes, search, and grounded responses. Documents are parsed, cleaned, chunked, embedded, and stored with workspace and page metadata before retrieval.',
+      'A full-stack research intelligence application that enables users to organize research papers into persistent workspaces and interact with uploaded PDFs through grounded question answering. The system combines document processing, semantic retrieval, vector search, and local LLM inference to generate responses based on relevant sections of the uploaded papers.',
     architecture:
-      'React + TypeScript frontend → FastAPI REST API → PDF processing and retrieval services → Sentence Transformers + ChromaDB → Ollama/Gemma 3 → grounded response with source references.',
+      'React + TypeScript → FastAPI REST API → PDF Processing → Text Cleaning & Chunking → Sentence Transformers → ChromaDB → Ollama / Gemma 3 → Grounded Response with Source References',
     highlights: [
-      'Persistent workspaces, chats, documents, messages, and notes.',
-      'PDF validation, SHA-256 duplicate protection, page-aware text extraction, chunking, and embeddings.',
-      'Workspace- and document-scoped semantic retrieval with source metadata.',
-      'Grounded answers generated with Gemma 3 through Ollama.',
-      'Responsive React interface with real document, chat, search, and workspace flows.',
+      'Built persistent workspaces, independent chats, documents, messages, and notes.',
+      'Implemented PDF validation, SHA-256 duplicate detection, page-aware extraction, text cleaning, chunking, and embedding generation.',
+      'Developed workspace- and document-scoped semantic retrieval using Sentence Transformers and ChromaDB.',
+      'Integrated Gemma 3 through Ollama for grounded question answering over retrieved document context.',
+      'Preserved source metadata to support document and page-level grounding of retrieved information.',
+      'Developed a responsive React interface supporting real document, chat, search, and workspace workflows.',
     ],
-  },
-  {
-    title: 'Robust Fault-Tolerant Air Quality Monitoring & Prediction System',
-    category: 'M.Tech Thesis · IoT · Machine Learning',
-    description:
-      'A fault-tolerant air-quality monitoring and forecasting system combining heterogeneous sensors, embedded acquisition, backend analytics, and machine-learning-based prediction.',
-    technologies: [
-      'ESP32',
-      'MQ Sensors',
-      'PMS7003',
-      'DHT22',
-      'ADS1115',
-      'Python',
-      'TensorFlow',
-      'MongoDB',
-      'React',
-      'Flask',
-    ],
-    overview:
-      'The system acquires particulate, gas, temperature, humidity, and electrical measurements from an ESP32-based sensing node. It combines sensor validation and fault detection with backend processing, dashboard visualization, and time-series pollutant/AQI prediction.',
-    architecture:
-      'Heterogeneous sensors → ESP32 acquisition and fault flags → backend/API → MongoDB → React dashboard, with TensorFlow-based time-series prediction for pollutant/AQI forecasting.',
-    highlights: [
-      'Multi-sensor acquisition using MQ7, MQ135, MQ136, PMS7003, DHT22, ADS1115, RTC, and SD storage.',
-      'Rule-based fault detection and confidence scoring for sensor and system failures.',
-      'Data validation, filtering, smoothing, and clean-dataset generation for ML.',
-      'TensorFlow forecasting pipeline evaluated for pollutant prediction.',
-      'Research work presented through ET2ECN 2026 and extended toward journal submission.',
-    ],
+    engineeringFocus:
+      'RAG · Semantic Search · Document Processing · Vector Retrieval · LLM Applications · Full-Stack Development',
   },
   {
     title: 'Team Task Manager',
     category: 'Full-Stack Software Engineering',
     description:
-      'A full-stack task and project management application with authentication, project organization, task tracking, team access, and role-based permissions.',
+      'A full-stack team and project management application built with React, Express.js, and PostgreSQL, featuring JWT authentication, Admin/Member role-based access control, project and team management, task assignment and tracking, priorities, due dates, and dashboard-based progress monitoring.',
     technologies: [
       'React',
       'TypeScript',
@@ -106,17 +122,21 @@ export const projects: Project[] = [
       'Zod',
       'Git',
     ],
+    github: 'https://github.com/Sunny1112003/Team-task-manager-app',
     overview:
-      'The application provides a structured workspace for managing projects and tasks, with authentication, authorization, validation, and status tracking across team members.',
+      'A full-stack team and project management application designed to provide a structured workspace for managing projects, tasks, and team access. The application combines a React frontend with an Express REST API and PostgreSQL database, with authentication, authorization, validation, and task-status workflows integrated across the system.',
     architecture:
-      'React frontend → Express REST API → validation and authentication layer → PostgreSQL relational data model.',
+      'React + TypeScript → Express REST API → Authentication & Authorization → Zod Validation → PostgreSQL',
     highlights: [
-      'JWT-based authentication and password hashing.',
-      'Admin/member role-based access control.',
-      'Project and task management with status tracking.',
-      'Zod-based request validation and REST API design.',
-      'Production-oriented build and deployment configuration.',
+      'Implemented JWT-based authentication with secure password hashing.',
+      'Developed Admin/Member role-based access control for protected application functionality.',
+      'Built project and task workflows including task assignment, status tracking, priorities, and due dates.',
+      'Implemented REST APIs with Zod-based request validation.',
+      'Integrated PostgreSQL for persistent relational data and application state.',
+      'Built dashboard-oriented workflows for managing projects, tasks, and team activity.',
     ],
+    engineeringFocus:
+      'Full-Stack Development · REST APIs · Authentication · RBAC · PostgreSQL · Application Architecture',
   },
 ]
 
