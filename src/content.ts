@@ -21,7 +21,7 @@ export const site = {
   heroDescription:
     'I build practical AI applications and software systems, with hands-on work in RAG, LLM applications, machine learning, backend APIs, and full-stack development. My work spans AI, software engineering, IoT, and data-driven systems, with a focus on building practical and reliable solutions.',
   about:
-    'M.Tech graduate from NIT Calicut with a background in Electrical and Electronics Engineering and hands-on work across AI/ML, Generative AI, full-stack development, IoT, and research. My work combines software engineering with applied machine learning to turn technical ideas into usable systems.',
+    'Recent M.Tech graduate from the National Institute of Technology Calicut with hands-on experience developing AI applications, software systems, and IoT solutions through academic and personal projects. My work spans Generative AI, LLM applications, Retrieval-Augmented Generation (RAG), machine learning, backend APIs, full-stack development, and embedded/IoT systems. I have built end-to-end applications involving document processing, semantic search, model inference, REST APIs, databases, sensor data, fault detection, and data validation. My academic research focuses on fault-tolerant air quality monitoring and forecasting using heterogeneous IoT sensors, with research presented at the 5th International Conference on Emerging Technology Trends in Electronics, Communication and Networking (ET2ECN 2026), SVNIT Surat, India, and a paper submitted to the IEEE Internet of Things Journal.',
   photo: './assets/hero.webp',
   email: 'prajnadeepankarnelapuri@gmail.com',
   phone: '+91 9550167744',
