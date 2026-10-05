@@ -118,49 +118,6 @@ export const projects: Project[] = [
       'Production-oriented build and deployment configuration.',
     ],
   },
-  {
-    title: 'Smart Tollgate System',
-    category: 'IoT · Automation',
-    description:
-      'An IoT-based automated toll collection prototype using RFID identification and cloud-connected monitoring for real-time vehicle processing.',
-    technologies: [
-      'NodeMCU',
-      'RFID',
-      'ThingSpeak',
-      'IoT',
-      'Embedded Systems',
-    ],
-    overview:
-      'The system automates vehicle identification and toll processing using RFID while sending operational data to a cloud monitoring platform for logging and visibility.',
-    architecture:
-      'RFID vehicle identification → NodeMCU control logic → automated toll workflow → ThingSpeak cloud logging.',
-    highlights: [
-      'Automated vehicle identification using RFID.',
-      'Real-time toll processing workflow.',
-      'Cloud-based logging and monitoring through ThingSpeak.',
-    ],
-  },
-  {
-    title: 'Quasi-Z-Source DC–DC Converter',
-    category: 'Power Electronics · MATLAB/Simulink',
-    description:
-      'A high step-up DC–DC converter design and simulation study focused on improving voltage gain and conversion efficiency.',
-    technologies: [
-      'MATLAB',
-      'Simulink',
-      'Power Electronics',
-      'DC–DC Conversion',
-    ],
-    overview:
-      'The project studies a quasi-Z-source converter topology and evaluates its operating behavior through MATLAB/Simulink-based design and simulation.',
-    architecture:
-      'Converter topology design → switching and control model → MATLAB/Simulink simulation → performance evaluation.',
-    highlights: [
-      'High step-up voltage conversion topology.',
-      'Simulation-based evaluation of converter performance.',
-      'Focus on voltage gain and efficiency characteristics.',
-    ],
-  },
 ]
 
 export const skills: { group: string; items: string[] }[] = [
