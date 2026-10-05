@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import { education, projects, research, site, skills, type Project } from './content'
+import { education, experience, projects, research, site, skills, type Project } from './content'
 import './styles.css'
 
 const focusAreas = [
@@ -21,6 +21,7 @@ function App() {
   const hasAbout = Boolean(site.about.trim())
   const hasProjects = projects.length > 0
   const hasSkills = skills.length > 0
+  const hasExperience = experience.length > 0
   const hasResearch = research.length > 0
   const hasEducation = education.length > 0
   const hasContact = Boolean(site.email || site.phone || site.location || site.linkedin || site.github)
@@ -29,6 +30,7 @@ function App() {
     'home',
     hasAbout && 'about',
     hasProjects && 'projects',
+    hasExperience && 'experience',
     hasSkills && 'skills',
     hasResearch && 'research',
     hasEducation && 'education',
@@ -141,10 +143,30 @@ function App() {
           </section>
         )}
 
+        {hasExperience && (
+          <section id="experience" className="section section-soft">
+            <div className="container narrow">
+              <SectionHeading number="03" title="Experience" />
+              <div className="research-list">
+                {experience.map((item, index) => (
+                  <article className="research-item" key={`${item.role}-${item.company}`}>
+                    <div className="research-index">0{index + 1}</div>
+                    <div className="research-content">
+                      <span className="meta">{item.type} · {item.period}</span>
+                      <h3>{item.role} · {item.company}</h3>
+                      <ul>{item.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}</ul>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {hasSkills && (
           <section id="skills" className="section">
             <div className="container">
-              <SectionHeading number="03" title="Technical Expertise" />
+              <SectionHeading number="04" title="Technical Expertise" />
               <div className="skills-grid">
                 {skills.map((group) => (
                   <div className="skill-card" key={group.group}>
@@ -160,7 +182,7 @@ function App() {
         {hasResearch && (
           <section id="research" className="section section-soft">
             <div className="container narrow">
-              <SectionHeading number="04" title="Research & Publications" />
+              <SectionHeading number="05" title="Research & Publications" />
               <div className="research-list">
                 {research.map((item, index) => (
                   <article className="research-item" key={item.title}>
@@ -181,7 +203,7 @@ function App() {
         {hasEducation && (
           <section id="education" className="section">
             <div className="container narrow">
-              <SectionHeading number="05" title="Education" />
+              <SectionHeading number="06" title="Education" />
               <div className="education-timeline">
                 {education.map((item, index) => (
                   <article className="education-item" key={`${item.degree}-${item.institution}`}>
@@ -203,7 +225,7 @@ function App() {
           <section id="contact" className="section section-dark contact">
             <div className="container contact-grid">
               <div>
-                <p className="eyebrow">06 · Contact</p>
+                <p className="eyebrow">07 · Contact</p>
                 <h2>Let's build something meaningful.</h2>
                 <p>Open to professional opportunities in AI and software engineering, with a focus on building practical solutions to real-world problems.</p>
               </div>
