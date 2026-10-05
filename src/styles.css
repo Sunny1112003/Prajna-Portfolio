@@ -27,7 +27,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
 .hero-description{max-width:650px;line-height:1.85;color:#d6c8c3;font-size:15px}
 .hero-actions{display:flex;gap:13px;margin-top:34px;flex-wrap:wrap}.button{padding:13px 22px;border-radius:6px;border:1px solid var(--gold);font-weight:700;font-size:13px;transition:.2s}
 .button-gold{background:var(--gold);color:#261015}.button-gold:hover{background:var(--gold-soft);transform:translateY(-1px)}
-.button-outline{color:var(--ivory)}.button-outline:hover{background:rgba(198,161,91,.1)}
+.button-outline{background:transparent;color:var(--ivory)}.button-outline:hover{background:rgba(198,161,91,.1)}
 .social-row{display:flex;gap:23px;margin-top:27px;color:#dccfc8;font-size:13px}.social-row a:hover{color:var(--gold)}
 
 .hero-visual{height:590px;position:relative;display:grid;place-items:end center;isolation:isolate}
