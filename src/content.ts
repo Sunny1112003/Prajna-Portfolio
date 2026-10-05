@@ -146,16 +146,8 @@ export const skills: { group: string; items: string[] }[] = [
     items: ['Python', 'JavaScript', 'TypeScript', 'SQL'],
   },
   {
-    group: 'AI / Machine Learning',
-    items: [
-      'TensorFlow',
-      'Neural Networks',
-      'Model Training',
-      'Model Evaluation',
-      'Predictive Modeling',
-      'Data Preprocessing',
-      'Feature Engineering',
-    ],
+    group: 'Machine Learning',
+    items: ['TensorFlow', 'Model Training', 'Model Evaluation', 'Predictive Modeling'],
   },
   {
     group: 'Generative AI & RAG',
@@ -163,7 +155,7 @@ export const skills: { group: string; items: string[] }[] = [
   },
   {
     group: 'Retrieval & Vector Search',
-    items: ['Sentence Transformers', 'ChromaDB', 'Vector Indexing', 'Semantic Search'],
+    items: ['Sentence Transformers', 'ChromaDB', 'Semantic Search'],
   },
   {
     group: 'Backend & APIs',
@@ -171,22 +163,37 @@ export const skills: { group: string; items: string[] }[] = [
   },
   {
     group: 'Frontend & Databases',
-    items: ['React', 'HTML5', 'CSS3', 'PostgreSQL', 'MongoDB'],
+    items: ['React', 'PostgreSQL', 'MongoDB'],
   },
   {
-    group: 'AI Reliability',
-    items: [
-      'AI Output Evaluation',
-      'Data Validation',
-      'Robustness Testing',
-      'Sensitivity Analysis',
-      'Fault Injection',
-      'Failure-Mode Analysis',
+    group: 'Data Annotation & Quality',
+    items: ['Data Annotation', 'Multimodal Data Labeling', 'Data Validation', 'Data Quality', 'AI Output Evaluation', 'Quality Assurance'],
+  },
+  {
+    group: 'Tools',
+    items: ['Git', 'GitHub'],
+  },
+]
+
+export const experience: {
+  role: string
+  company: string
+  type: string
+  period: string
+  highlights: string[]
+}[] = [
+  {
+    role: 'AI Data Annotator',
+    company: 'TELUS International',
+    type: 'Freelance',
+    period: 'Oct 2025 – Nov 2025',
+    highlights: [
+      'Annotated and validated multimodal image, audio, and video datasets supporting AI/ML model training and evaluation.',
+      'Performed pairwise ranking and systematic AI output evaluation using predefined criteria to assess quality, consistency, and comparative performance.',
+      'Reviewed datasets to identify inconsistent, unreliable, or low-quality inputs, including data-quality issues and failure cases.',
+      'Applied established annotation guidelines and evaluation criteria to maintain accuracy, consistency, and quality across assigned tasks.',
+      'Evaluated AI-generated outputs and documented quality issues to support model evaluation and downstream AI improvement workflows.',
     ],
-  },
-  {
-    group: 'Tools & Engineering',
-    items: ['Git', 'GitHub', 'VS Code', 'ESP32', 'MATLAB', 'Simulink'],
   },
 ]
 
