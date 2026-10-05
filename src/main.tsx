@@ -125,14 +125,14 @@ function App() {
                     <div className="project-media">
                       {project.image
                         ? <img src={project.image} alt="" />
-                        : <div className="media-fallback"><span>{String(index + 1).padStart(2, '0')}</span><small>Media can be added here</small></div>}
+                        : <div className="media-fallback"><span>{String(index + 1).padStart(2, '0')}</span></div>}
                     </div>
                     <div className="project-body">
                       <p className="project-category">{project.category}</p>
                       <h3>{project.title}</h3>
                       <p>{project.description}</p>
                       <div className="chips">{project.technologies.slice(0, 6).map((t) => <span key={t}>{t}</span>)}</div>
-                      <span className="view-link">View case study ↗</span>
+                      <span className="view-link">Explore Project ↗</span>
                     </div>
                   </article>
                 ))}
@@ -236,13 +236,16 @@ function App() {
               ? <video className="modal-video" src={selected.video} controls />
               : selected.image
                 ? <img className="modal-cover" src={selected.image} alt="" />
-                : <div className="modal-media-fallback">Project media can be added here</div>}
+                : null}
             {selected.gallery?.length ? <div className="gallery">{selected.gallery.map((src) => <img key={src} src={src} alt="" />)}</div> : null}
             <p className="project-category">{selected.category}</p>
             <h2>{selected.title}</h2>
             <p>{selected.overview || selected.description}</p>
             {selected.architecture && <><h3>Architecture</h3><p>{selected.architecture}</p></>}
-            {selected.highlights?.length ? <><h3>Highlights</h3><ul>{selected.highlights.map((item) => <li key={item}>{item}</li>)}</ul></> : null}
+            {selected.highlights?.length ? <><h3>Key Highlights</h3><ul>{selected.highlights.map((item) => <li key={item}>{item}</li>)}</ul></> : null}
+            {selected.research?.length ? <><h3>Research</h3>{selected.research.map((item) => <div key={item.title} className="project-detail"><strong>{item.title}</strong><p>{item.description}</p></div>)}</> : null}
+            {selected.engineeringFocus && <><h3>Engineering Focus</h3><p>{selected.engineeringFocus}</p></>}
+            <h3>Technology</h3>
             <div className="chips">{selected.technologies.map((t) => <span key={t}>{t}</span>)}</div>
             <div className="modal-links">
               {selected.github && <a href={selected.github} target="_blank" rel="noreferrer">GitHub ↗</a>}
