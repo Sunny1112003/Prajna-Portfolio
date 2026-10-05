@@ -60,7 +60,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
 
 .research-list{display:grid;gap:13px}.research-item{display:grid;grid-template-columns:70px 1fr;gap:22px;background:var(--white);border:1px solid #e1d9d2;border-radius:10px;padding:27px}.research-index{font-family:'Playfair Display';font-size:31px;color:var(--gold)}.research-content h3{font-family:'Playfair Display';font-size:25px;line-height:1.2;margin:9px 0 10px}.research-content p{color:var(--muted);line-height:1.7;font-size:13px;margin:0 0 13px}.research-content a{color:var(--burgundy);font-weight:700;font-size:12px}
 
-.education-timeline{position:relative;padding-left:35px}.education-timeline:before{content:"";position:absolute;left:11px;top:12px;bottom:12px;width:1px;background:var(--line)}
+.education-timeline{position:relative;padding-left:35px;max-height:540px;overflow-y:auto;padding-right:12px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}.education-timeline:before{content:"";position:absolute;left:11px;top:12px;bottom:12px;width:1px;background:var(--line)}
 .education-item{position:relative;padding-bottom:17px}.timeline-marker{position:absolute;left:-35px;top:20px;width:23px;height:23px;border-radius:50%;background:var(--ivory);border:1px solid var(--gold);display:grid;place-items:center;z-index:1}.timeline-marker span{font-size:7px;color:var(--burgundy);font-weight:700}
 .education-card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px 27px}.education-card h3{font-family:'Playfair Display';font-size:23px;margin:8px 0}.education-card p{color:var(--muted);font-size:14px;margin:0 0 8px}.education-detail{font-size:11px;color:var(--burgundy);font-weight:700}
 
