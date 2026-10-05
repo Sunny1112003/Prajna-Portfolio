@@ -6,7 +6,7 @@ import './styles.css'
 const focusAreas = [
   { number: '01', title: 'Applied AI', text: 'RAG, LLM applications, machine learning, and evaluation-focused AI systems.' },
   { number: '02', title: 'Software Engineering', text: 'Full-stack applications, REST APIs, databases, and maintainable product workflows.' },
-  { number: '03', title: 'Intelligent Systems', text: 'IoT, embedded sensing, automation, and data-driven engineering research.' },
+  { number: '03', title: 'IoT & Intelligent Systems', text: 'Embedded systems, sensor integration, automation, and IoT applications.' },
 ]
 
 function App() {
