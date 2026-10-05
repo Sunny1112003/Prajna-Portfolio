@@ -20,7 +20,7 @@ export const site = {
   education: 'M.Tech, NIT Calicut',
   heroDescription: '',
   about: '',
-  photo: '',
+  photo: '/assets/hero.webp',
   email: '',
   phone: '',
   location: '',
