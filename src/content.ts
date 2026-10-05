@@ -202,14 +202,14 @@ export const research: {
     type: 'Conference paper · ET2ECN 2026',
     year: '2026',
     description:
-      'Research on heterogeneous sensor-based air-quality monitoring, fault tolerance, and forecasting, presented at the 5th International Conference on Emerging Technology Trends in Electronics, Communication and Networking (ET2ECN 2026), SVNIT Surat. The paper is to appear in the Springer Lecture Notes in Electrical Engineering series.',
+      'Research on air-quality monitoring, sensor fault tolerance, and forecasting using heterogeneous sensors, presented at the 5th International Conference on Emerging Technology Trends in Electronics, Communication and Networking (ET2ECN 2026), SVNIT Surat. The paper is to appear in the Springer Lecture Notes in Electrical Engineering series.',
   },
   {
-    title: 'Air Quality Monitoring and Prediction Research',
-    type: 'Journal manuscript · IEEE Internet of Things Journal',
+    title: 'Design and Implementation of a Fault-Tolerant Real-Time Air Quality Monitoring and Forecasting System Using Low-Cost Heterogeneous IoT Sensors for Constrained Environments',
+    type: 'Journal submission · IEEE Internet of Things Journal',
     year: '2026',
     description:
-      'Extended research work on robust IoT-based air-quality monitoring and prediction, submitted as a manuscript to the IEEE Internet of Things Journal in 2026.',
+      'Extended research on the design and implementation of a fault-tolerant real-time air-quality monitoring and forecasting system using low-cost heterogeneous IoT sensors for constrained environments. Paper submitted to the IEEE Internet of Things Journal in July 2026.',
   },
 ]
 
