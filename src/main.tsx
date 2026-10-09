@@ -255,7 +255,7 @@ function App() {
           <article className="project-modal" onClick={(e) => e.stopPropagation()}>
             <button className="close" onClick={() => setSelected(null)} aria-label="Close project">×</button>
             {selected.video
-              ? <video className="modal-video" src={selected.video} controls />
+              ? <iframe className="modal-video-frame" src={selected.video} title={`${selected.title} demo video`} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen />
               : selected.image
                 ? <img className="modal-cover" src={selected.image} alt="" />
                 : null}
