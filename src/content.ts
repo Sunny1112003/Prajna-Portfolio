@@ -78,7 +78,7 @@ export const projects: Project[] = [
     title: 'LLM-Powered Research Paper Assistant',
     category: 'Generative AI · RAG · Full Stack',
     image: './assets/llm-research-paper-assistant-cover.jpg',
-    video: './videos/llm-research-paper-assistant.mp4',
+    video: 'https://drive.google.com/file/d/14DG6zb4zCCcQ3-GpoD0-jd-8mSZfdkHl/preview',
     description:
       'A full-stack RAG application for research-paper intelligence, with persistent workspaces and chats, PDF ingestion and page-aware processing, semantic retrieval using Sentence Transformers and ChromaDB, and grounded question answering with Gemma 3 through Ollama.',
     technologies: [
@@ -112,7 +112,7 @@ export const projects: Project[] = [
     title: 'Team Task Manager',
     category: 'Full-Stack Software Engineering',
     image: './assets/team-task-manager-cover.jpg',
-    video: './videos/team-task-manager.mp4',
+    video: 'https://drive.google.com/file/d/1p5kz0LWyrJrD-yirdnK7Q8qCQkWxw1EL/preview',
     description:
       'A full-stack team and project management application built with React, Express.js, and PostgreSQL, featuring JWT authentication, Admin/Member role-based access control, project and team management, task assignment and tracking, priorities, due dates, and dashboard-based progress monitoring.',
     technologies: [
