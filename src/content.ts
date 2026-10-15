@@ -166,6 +166,10 @@ export const skills: { group: string; items: string[] }[] = [
     items: ['FastAPI', 'Node.js', 'Express.js', 'REST APIs'],
   },
   {
+    group: 'Web Technologies',
+    items: ['HTML', 'CSS'],
+  },
+  {
     group: 'Frontend & Databases',
     items: ['React', 'PostgreSQL', 'MongoDB'],
   },
